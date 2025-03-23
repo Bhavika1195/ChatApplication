@@ -1,0 +1,9 @@
+<div>
+  <h2>Angular 19 WebSocket Chat</h2>
+  <input [(ngModel)]="message" placeholder="Type a message..." />
+  <button (click)="sendMessage()">Send</button>
+
+  <ul>
+    <li *ngFor="let msg of messages()">{{ msg }}</li>
+  </ul>
+</div>
